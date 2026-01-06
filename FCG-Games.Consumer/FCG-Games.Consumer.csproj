@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>dotnet-FCG_Games.Consumer-b4477540-87c7-47cf-a0c1-befb777cb0f3</UserSecretsId>
+    <RootNamespace>FCG_Games.Consumer</RootNamespace>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.1" />
+    <PackageReference Include="FCG.Shared" Version="1.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FCG-Games.Application\FCG-Games.Application.csproj" />
+    <ProjectReference Include="..\FCG-Games.Domain\FCG-Games.Domain.csproj" />
+    <ProjectReference Include="..\FCG-Games.Infrastructure\FCG-Games.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
