@@ -140,7 +140,7 @@ FCG-Users.Consumer (opcional)
 
 1. **Clonar o repositório**
    ```bash
-   git clone https://github.com/seu-repo/FCG-Games.git
+   git clone https://github.com/theusccs111/FCG-Games.git
    cd FCG-Games
    ```
 
